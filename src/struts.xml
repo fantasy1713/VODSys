@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.il8n.encoding" value="UTF-8"></constant>
+    <constant name="struts.action.extension" value="shtml"></constant>
+    <!-- <constant name="struts.multipart.maxSize" value="10000000"></constant> -->   <!-- 上传文件大小 -->
+    
+	<!-- <package name="Myfriendship" extends="struts-default">
+		<interceptors>
+			<interceptor name="logincheck" class="interceptor.LoginCheckInterceptor"></interceptor>
+			<interceptor-stack name="base-stack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="logincheck"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="login">login.jsp</result>
+		<result name="error">error.jsp</result>
+		</global-results>
+	
+ 		<action name="login" class="loginAction">
+		</action>
+		<action name="regist" class="registAction">
+		</action>
+		
+        <action name="img_show" class="imgShowAction">
+		</action>
+		
+		<action name="ajaxchecknickname" class="registAction" method="checknickname"></action>
+		
+		<action name="checkcode" class="action.base.CheckCodeAction">
+			<result name="success" type="stream">
+				<param name="contentType">image/jpeg</param>
+				<param name="inputName">InputStream</param>
+				<param name="bufferSize">2048</param>
+			</result>
+		</action>
+
+	</package> -->
+	
+	<package name="jump" extends="struts-default">
+	<!-- <interceptors>
+			<interceptor name="logincheck" class="interceptor.LoginCheckInterceptor"></interceptor>
+			<interceptor-stack name="base-stack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="logincheck"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors> -->
+		<global-results>
+			<result name="login">login.jsp</result>
+		<!--<result name="error">error.jsp</result> -->
+		</global-results>
+		
+
+	</package>
+	
+	
+	
+
+</struts>
