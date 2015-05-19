@@ -10,7 +10,7 @@ import zhang.fan.vod.dao.UserDao;
 import zhang.fan.vod.domain.User;
 import zhang.fan.vod.service.UserService;
 
-@Service
+@Service("userService")
 public class UserServiceImpl implements UserService {
 	private UserDao userDao;
 

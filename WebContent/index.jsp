@@ -7,6 +7,11 @@
 <title>Index</title>
 </head>
 <body>
-	<a href="gologin.shtml">登录</a>
+	<!-- <a href="gologin.shtml">登录</a> -->
+	<form action="userlogin" method="post">
+		<input name="emailOrName" placeholder="请输入邮箱或用户名">
+		<input name="password" placeholder="口令">
+		<input type="submit" value="登录"> 
+	</form>
 </body>
 </html>
