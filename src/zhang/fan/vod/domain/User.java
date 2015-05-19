@@ -22,6 +22,7 @@ public class User {
 	private boolean isDeleted = false;
 	private Date regTime;
 	private String remark;
+
 	
 	public final static String EMAIL="email";
 	public final static String USERNAME="username";
@@ -29,6 +30,7 @@ public class User {
 	public final static String REGTIME="regTime";
 	public final static String REMARK="remark";
 	
+
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

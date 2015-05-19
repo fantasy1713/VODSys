@@ -1,5 +1,6 @@
 package zhang.fan.vod.action;
 
+
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 
@@ -11,5 +12,6 @@ import zhang.fan.vod.service.UserService;
 public class LoginAction {
 	private UserService userService;
 	private User user;
+
 
 }
