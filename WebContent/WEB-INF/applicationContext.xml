@@ -22,7 +22,7 @@
 		<property name="maxIdleTime" value="20"></property>
 	</bean>
 	
-	<bean id="SessionFactory"
+	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource">
 			<ref local="dataSource" />
@@ -57,7 +57,7 @@
 	<bean id="transactionManager"
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 
-		<property name="sessionFactory" ref="SessionFactory" />
+		<property name="sessionFactory" ref="sessionFactory" />
 
 	</bean>
 
@@ -80,6 +80,11 @@
  
  
  	<!-- __________________Dao__________________ -->
+ 	<bean id="userDao" class="zhang.fan.vod.dao.daoimpl.UserDaoImpl">
+ 		<property name="sessionFactory">
+ 			<ref local="sessionFactory"/>
+ 		</property>
+ 	</bean>
  	
  	<!-- __________________Service__________________ -->
  	
