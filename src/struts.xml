@@ -5,7 +5,7 @@
 
 <struts>
     <constant name="struts.il8n.encoding" value="UTF-8"></constant>
-    <constant name="struts.action.extension" value="shtml"></constant>
+    <!-- <constant name="struts.action.extension" value="shtml"></constant> -->
     <!-- <constant name="struts.multipart.maxSize" value="10000000"></constant> -->   <!-- 上传文件大小 -->
     
 	<!-- <package name="Myfriendship" extends="struts-default">
@@ -56,7 +56,12 @@
 		
 
 	</package>
-	
+	<package name="user" extends="struts-default">
+		<action name="userlogin" class="loginAction" method="userlogin">
+			<result>success.jsp</result>
+			<result name="login">index.jsp</result>
+		</action>
+	</package>
 	
 	
 
